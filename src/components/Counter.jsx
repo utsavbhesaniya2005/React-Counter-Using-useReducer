@@ -8,6 +8,7 @@ const initialValue = {
 const Counter = () => {
    
     // useReducer Can do a component a free and give all its work to reducer, it can only sends action to reducer so it can not do any work instead of these it can sends action to the reducer
+    // dispatch is method/Function which can sends action type to our useReducer
     const [rec, dispatch] = useReducer(CounterReducer, initialValue);
 
     const handleInc = () => {
