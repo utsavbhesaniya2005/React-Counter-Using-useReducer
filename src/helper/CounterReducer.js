@@ -2,22 +2,22 @@
 //      type : ,   [Compulsory]
 //      payload : ,[optional]
 // }
-const CounterReducer = (initialState, action) => {
+const CounterReducer = (state, action) => {
 
     switch(action.type){
         
         case 'INC': 
             return {
-                count : initialState.count+1
+                count : state.count+1
             };
         
         case 'DEC':
             return {
-                count : initialState.count-1
+                count : state.count-1
             };
 
         default: 
-            return initialState.count;
+            return state;
     }
 
 }
